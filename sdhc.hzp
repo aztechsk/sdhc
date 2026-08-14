@@ -1,0 +1,16 @@
+<!DOCTYPE CrossStudio_Project_File>
+<solution Name="sdhc" target="8" version="2">
+  <project Name="sdhc">
+    <configuration
+      Name="Common"
+      c_only_additional_options="-Wall;-Wextra;-Wstrict-prototypes;-Wmissing-prototypes;-Wmissing-declarations;-Wshadow;-Wpointer-arith;-Wbad-function-cast;-Wcast-align;-Wcast-qual;-Wjump-misses-init;-Wno-unused-parameter;-Wundef"
+      c_system_include_directories="$(ProjectDir)/../freertos/src/inc"
+      c_user_include_directories="$(ProjectDir)/../inc;$(ProjectDir)/../sys/src;$(ProjectDir)/../ucdrv/src"
+      project_directory=""
+      project_type="Library" />
+    <folder Name="src">
+      <file Name="sdhc.c" file_name="src/sdhc.c" />
+      <file Name="sdhc.h" file_name="src/sdhc.h" />
+    </folder>
+  </project>
+</solution>
